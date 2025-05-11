@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mysteries of JavaScript World 🎢</title>
+    <meta name="description" content="JavaScript Interactive Playground" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="title">Mysteries of JavaScript World! 🎢</h1>
+        <p class="subtitle">
+          Explore interactive elements, event handling, and form validation in this JavaScript playground! <br>DE GREAT LOAL <br>is on the track<br>.
+        </p>
+      </header>
+
+      <div class="tabs-container">
+        <div class="tabs-list">
+          <button class="tab-trigger active" data-tab="events">Event Handling</button>
+          <button class="tab-trigger" data-tab="interactive">Interactive Elements</button>
+          <button class="tab-trigger" data-tab="form">Form Validation</button>
+          <button class="tab-trigger" data-tab="secret">Secret Features</button>
+        </div>
+
+        <div class="tab-content">
+          <!-- Event Handling Tab -->
+          <div class="tab-panel active" id="events-panel">
+            <h2 class="section-title purple">Event Handling Playground</h2>
+            <p class="section-description">Experiment with different types of JavaScript events!</p>
+            
+            <div class="card-grid">
+              <div class="card" id="mouse-events-card">
+                <div class="card-header">
+                  <h3 class="card-title blue">Mouse Events</h3>
+                </div>
+                <div class="card-content blue-bg">
+                  <p class="mouse-position">Mouse Position: X: 0, Y: 0</p>
+                  <div class="hover-element">Hover over me!</div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title purple">Click Events</h3>
+                </div>
+                <div class="card-content purple-bg">
+                  <p>Button clicked: <span class="click-count">0</span> times</p>
+                  <button class="btn btn-purple click-btn">Click Me!</button>
+                </div>
+              </div>
+
+              <div class="card full-width">
+                <div class="card-header">
+                  <h3 class="card-title green">Keyboard Events</h3>
+                </div>
+                <div class="card-content green-bg keyboard-area">
+                  <p class="text-xl">Last key pressed: <span class="last-key">None</span></p>
+                  <p class="hint-text">Type on your keyboard to see the events. The last key you pressed will appear above.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Elements Tab -->
+          <div class="tab-panel" id="interactive-panel">
+            <h2 class="section-title blue">Interactive Elements</h2>
+            <p class="section-description">Explore different ways JavaScript can create interactive UI components!</p>
+            
+            <div class="card-grid">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title purple">Color Changing Button</h3>
+                </div>
+                <div class="card-content purple-bg">
+                  <button class="btn color-change-btn bg-blue">Click to Change</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title blue">Image Gallery</h3>
+                </div>
+                <div class="card-content blue-bg">
+                  <div class="gallery-container">
+                    <div class="gallery-image-container">
+                      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop&auto=format" alt="Coding on laptop" class="gallery-image active" />
+                      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500&h=300&fit=crop&auto=format" alt="Code on screen" class="gallery-image" />
+                      <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=500&h=300&fit=crop&auto=format" alt="Tech setup" class="gallery-image" />
+                    </div>
+                    <div class="gallery-controls">
+                      <button class="gallery-btn prev-btn">&lt;</button>
+                      <button class="gallery-btn next-btn">&gt;</button>
+                    </div>
+                    <div class="gallery-dots">
+                      <button class="gallery-dot active" data-index="0"></button>
+                      <button class="gallery-dot" data-index="1"></button>
+                      <button class="gallery-dot" data-index="2"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card full-width">
+                <div class="card-header">
+                  <h3 class="card-title green">Accordion</h3>
+                </div>
+                <div class="card-content green-bg">
+                  <div class="accordion">
+                    <div class="accordion-item">
+                      <button class="accordion-trigger">
+                        What is event handling?
+                        <span class="accordion-icon">▸</span>
+                      </button>
+                      <div class="accordion-content">
+                        <div class="accordion-body">
+                          Event handling is how JavaScript responds to user interactions like clicks, keypresses, and mouse movements. It's the foundation of interactive web applications.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-trigger">
+                        What are interactive elements?
+                        <span class="accordion-icon">▸</span>
+                      </button>
+                      <div class="accordion-content">
+                        <div class="accordion-body">
+                          Interactive elements are components on a webpage that respond to user actions, providing a dynamic and engaging user experience rather than static content.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-trigger">
+                        Why is form validation important?
+                        <span class="accordion-icon">▸</span>
+                      </button>
+                      <div class="accordion-content">
+                        <div class="accordion-body">
+                          Form validation ensures that user submitted data is complete, correctly formatted, and secure before being processed, improving both user experience and data quality.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Validation Tab -->
+          <div class="tab-panel" id="form-panel">
+            <h2 class="section-title orange">Form Validation</h2>
+            <p class="section-description">Experience real-time form validation with JavaScript!</p>
+            
+            <div class="card full-width">
+              <div class="card-header">
+                <h3 class="card-title orange">Registration Form</h3>
+              </div>
+              <div class="card-content">
+                <form id="registration-form" class="validation-form">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" class="form-input" />
+                    <p class="error-message" id="username-error"></p>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" />
+                    <p class="error-message" id="email-error"></p>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" />
+                    <div class="password-strength-meter">
+                      <div class="strength-bar"></div>
+                    </div>
+                    <p class="strength-text"></p>
+                    <p class="error-message" id="password-error"></p>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-orange submit-btn">Register</button>
+                </form>
+              </div>
+              <div class="card-footer orange-bg">
+                <ul class="validation-rules">
+                  <li>Username must be at least 3 characters</li>
+                  <li>Email must be in a valid format</li>
+                  <li>Password must be at least 8 characters</li>
+                  <li>Password must contain at least one uppercase letter and one number</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secret Features Tab -->
+          <div class="tab-panel" id="secret-panel">
+            <h2 class="section-title green">Secret Features</h2>
+            <p class="section-description">Discover hidden interactions and Easter eggs!</p>
+            
+            <div class="card-grid">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title purple">Long Press</h3>
+                </div>
+                <div class="card-content purple-bg">
+                  <div class="long-press-button">Press & Hold</div>
+                  <p class="hint-text">Hold the button for 1.5 seconds</p>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title blue">Double Click</h3>
+                </div>
+                <div class="card-content blue-bg">
+                  <button class="btn btn-blue double-click-btn">Double Click Me!</button>
+                  <p class="hint-text">Try double clicking the button</p>
+                </div>
+              </div>
+
+              <div class="card full-width">
+                <div class="card-header">
+                  <h3 class="card-title green">Secret Code</h3>
+                </div>
+                <div class="card-content green-bg">
+                  <p class="text-center">Click the buttons in the correct sequence to unlock a secret</p>
+                  <div class="secret-buttons">
+                    <button class="btn btn-green secret-btn" data-num="1">1</button>
+                    <button class="btn btn-green secret-btn" data-num="2">2</button>
+                    <button class="btn btn-green secret-btn" data-num="3">3</button>
+                    <button class="btn btn-green secret-btn" data-num="4">4</button>
+                  </div>
+                  <div class="code-progress">
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <canvas id="effects-canvas" class="effects-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Try using the Konami Code: ↑↑↓↓←→←→BA</p>
+        <p class="copyright">© <span id="current-year"></span> JavaScript Adventures Land</p>
+      </footer>
+
+      <!-- Toast Notification Container -->
+      <div id="toast-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
